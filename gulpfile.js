@@ -48,7 +48,7 @@ gulp.task("pug", ()=>{
         .pipe(gulp.dest("src"));
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', "pug"], function () {
+gulp.task('watch', ['browser-sync', 'css-libs', "pug"], function () {
     gulp.watch('src/sass/**/*.sass', ["css-nano", browserSync.reload]);
     gulp.watch('src/*.pug', ["pug", browserSync.reload]);
 });
