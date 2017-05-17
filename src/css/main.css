@@ -1,11 +1,17 @@
 @-ms-viewport {
-  max-width: 640px; }
+  width: 640px;
+  max-width: 640;
+  zoom: 2.0; }
 
 @-o-viewport {
-  max-width: 640px; }
+  width: 640px;
+  max-width: 640;
+  zoom: 2.0; }
 
 @viewport {
-  max-width: 640px; }
+  width: 640px;
+  max-width: 640;
+  zoom: 2.0; }
 
 .wellc-container {
   width: 640px; }
