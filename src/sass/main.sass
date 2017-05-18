@@ -1,6 +1,130 @@
+@font-face
+  font-family: Arial
+  src: url("../fonts/ArialBold.eot")
+  src: url("../fonts/ArialBold.eot") format("embedded-opentype"), url("../fonts/ArialBold.woff") format("woff"), url("../fonts/ArialBold.ttf") format("truetype")
+  font-weight: bold
+@font-face
+  font-family: Arial
+  src: url("../fonts/ArialRegular.eot")
+  src: url("../fonts/ArialRegular.eot") format("embedded-opentype"), url("../fonts/ArialRegular.woff") format("woff"), url("../fonts/ArialRegular.ttf") format("truetype")
+  font-weight: normal
+@font-face
+  font-family: Tahoma
+  src:   url("../fonts/TahomaBold.ttf") format("truetype")
+  font-weight: bold
+@font-face
+  font-family: Tahoma
+  src:   url("../fonts/TahomaRegular.ttf") format("truetype")
+  font-weight: normal
+
+$green-border: #94bd46
+$green-bg-top: #94bd46
+$green-bg-bottom: #65972a
+$green-text: #85ad38
+$green-header: #10652e
+$beige-top: #ed9772
+$beige-bottom: #cc6666
+$red-text: #7c4242
+$grey-text: #777
+$white-text: #fefefe
+
 @viewport
   width: 640px
-  max-width: 640
+  max-width: 640px
   zoom: 2.0
 .wellc-container
   width: 640px
+
+*
+  color: $grey-text
+
+h2
+  font: bold 24px Tahoma
+  color: $white-text
+  margin: 0 0 7px
+.wellc-heading__text
+  color: $white-text
+
+.wellc-header
+  background: url("../img/header__bg.png") center -15px  no-repeat
+.wellc-heading
+  margin: 5px 0
+.wellc__logo
+  margin: 15px 0 0
+.wellc-heading
+  font: bold 20px Tahoma
+  color: $green-header
+.wellc
+  &-title
+    font: 400 14px Tahoma
+    color: $green-header
+    width: 350px
+    margin: 0 auto 20px
+  &-description
+    font: 14px Arial
+    color: $white-text
+    background: $green-bg-top
+    background-image: url("../img/header__ornament.png")
+    background-repeat: no-repeat
+    background-position: -65px -140px
+    position: relative
+    padding: 20px 90px 20px 80px
+    img
+      position: absolute
+      bottom: -33px
+      right: 23px
+    strong
+      color: $white-text
+  &-section-left
+    position: relative
+    margin: 20px 0 0
+    img
+      position: absolute
+    .section1__img
+      right: 0
+      top: 34px
+    .butterfly2
+      top: 250px
+      right: 315px
+      z-index: 1
+  &-heading-left
+    padding: 20px 0 20px 45px
+    background: linear-gradient(to bottom, $green-bg-top, $green-bg-bottom)
+    width: 366px
+    border-radius: 0 0 10px 0
+  &-heading-right
+    .wellc-heading__text
+      font: normal 14px Tahoma
+  &-caption-left
+    color: $green-text
+    font: bold 16px Arial
+    margin: 10px 0
+    span
+      color: $green-text
+  &-list-left
+    font: normal 14px Arial
+    padding: 0 0 0 10px
+    li
+      line-height: 20px
+  &-list-right li
+    font: normal 14px Tahoma
+    color: $red-text
+  &-content-left
+    font: normal 14px Arial
+    padding: 0 0 0 45px
+    width: 360px
+    position: relative
+    &:not(:last-child)
+      border-bottom: solid 2px $green-text
+      &::after
+        content: ''
+        position: absolute
+        width: 14px
+        height: 14px
+        border-radius: 50%
+        background: $green-text
+        bottom: -7.5px
+        right: 0
+  &-content-right
+    font: normal 14px Tahoma
+    color: $red-text
